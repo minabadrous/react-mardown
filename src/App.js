@@ -66,15 +66,16 @@ And here. | Okay. | I think we get it.
   render(){
     return(
       <div id="rend">
+        <h1 id="heading">Editor</h1>
         <textarea id="editor" name="editor" rows="8" cols="80" value={this.state.input}
         onChange={this.handleChange}></textarea>
+        <h1 id="heading-2">Previewer</h1>
         <p id="preview" dangerouslySetInnerHTML = {{__html: marked(this.state.input)}}>
 
         </p>
       </div>
     )
   }
-
+  
 }
-
 export default App;
